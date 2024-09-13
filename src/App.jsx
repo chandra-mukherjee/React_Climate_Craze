@@ -12,7 +12,7 @@ const App = () => {
 
   const searchCity = async () => {
     try {
-      // const api = import.meta.env.VITE_API_KEY;
+   
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${search}&appid=8be4372635cf8a92cbd484a4e460fce0`;
       const res = await axios.get(url);
       setWeatherDetails(res.data)
